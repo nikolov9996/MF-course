@@ -1,1 +1,1 @@
-console.log("aaaa")
+import("./bootstrap")
