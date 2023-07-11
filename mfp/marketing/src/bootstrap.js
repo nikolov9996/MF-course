@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./app";
 
 const mount = (el) => {
-  ReactDOM.render(<h1>aaaaa</h1>, el);
+  ReactDOM.render(<App/>, el);
 };
-//test
- 
+
 if (process.env.NODE_ENV === "development") {
   const devRoot = document.querySelector("#_marketing-dev-root");
 
@@ -13,4 +13,8 @@ if (process.env.NODE_ENV === "development") {
     mount(devRoot);
   }
 } else {
+}
+
+export  {
+  mount
 }
